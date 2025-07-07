@@ -1,0 +1,18 @@
+apiVersion: v2
+parts: 
+  - name: version-check
+    description: |-
+      A mismatch here means you may be using the wrong reference.
+      This reference was designed for OpenShift 4.18.
+    components:
+      - name: version-check
+        allOf:
+          - path: example/ClusterVersion.yaml
+            config:
+              ignore-unspecified-fields: true
+          - path: example/ClusterOperator.yaml
+            config:
+              ignore-unspecified-fields: true
+          - path: example/mcp.yaml
+            config:
+              ignore-unspecified-fields: true
