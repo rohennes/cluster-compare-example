@@ -13,6 +13,6 @@ parts:
           - path: example/ClusterOperator.yaml
             config:
               ignore-unspecified-fields: true
-          - path: example/mcp.yaml
+          - path: example/MachineConfigPool.yaml
             config:
               ignore-unspecified-fields: true
